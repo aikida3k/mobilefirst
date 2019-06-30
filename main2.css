@@ -1,0 +1,30 @@
+.column {
+    /* styles for all devices and mobile */
+    /* <!- float elements will collapse if they don't have content.
+    Therefore height is set to 50px -> */
+    
+    float: left;  /* global css: same on all devices */
+    height: 50px;  /* global css: same on all devices */
+    
+    /* mobile only */
+    width: 100%;
+    background-color: #000;
+    margin: 10px 0px;
+}
+
+/* styles for desktop */
+@media (min-width: 992px) {
+    .column {
+        background-color: #0997d3;
+    }
+}
+
+/* styles for tablet */
+@media (min-width: 768px) {
+    .column    {
+        background-color: blue;
+        width: 30%;
+        margin: 10px;
+    }
+}
+
